@@ -1,0 +1,23 @@
+ 
+<p class="hit">{{goal.description}}</p>
+<p>This Quote will be felt in {{goal.completeDate|dateCount}} days</p>
+<hr>
+<button (click)= 'goalDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+
+<div class="d-flex"> 
+<div class="card w-50"> 
+<div class="card-body">
+<h5 class="card-title">Number of likes</h5> 
+<p class="card-text"> {{numberOflikes}}</p>
+<button class="btn btn-success"(click)="likeButtonclick()" style="margin-right:5px">Like</button>
+</div>
+</div>
+
+<div class="card w-50"> 
+<div class="card-body">
+<h5 class="card-title">Number of Dislikes</h5> 
+<p class="card-text"> {{numberOfDislikes}}</p>
+<button class="btn btn-danger"(click)="dislikeButtonclick()">Dislike</button>
+</div>
+</div>
+</div>
